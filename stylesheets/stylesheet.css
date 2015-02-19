@@ -366,7 +366,7 @@ text-align: justify;
 }
 
 #main_content img {
-width: 100%;
+max-width: 100%;
 }
 
 #footer_wrap {
