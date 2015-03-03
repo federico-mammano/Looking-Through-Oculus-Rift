@@ -17,6 +17,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 *************************************************************************************/
 
+#ifndef WEBCAM_H_
+#define WEBCAM_H_
+
 #define WEBCAM_NB						2		// Number of webcams: 1 for cyclops/non-stereo mode or 2 for stereo mode
 #define WEBCAM_0_DEVICE_NUMBER			0		// The device number for webcam 0 (eg.: Left Eye) among connected ones. If you have 2 webcams and they are inverted, swith the number with WEBCAM_1_DEVICE_NUMBER!
 #define WEBCAM_0_VERT_ORIENTATION		true	// Is webcam 0 (eg.: Left Eye) vertically positioned?
@@ -499,3 +502,5 @@ public:
 	#endif
 	}
 };
+
+#endif // WEBCAM_H_
