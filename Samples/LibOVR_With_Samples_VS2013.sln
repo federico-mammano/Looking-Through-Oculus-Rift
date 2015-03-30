@@ -16,6 +16,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShaderReflector", "..\Tools
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{864AF251-702B-4819-89A2-4D9AC8059505}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example2", "Example2\Projects\Win\VS2013\Example2.vcxproj", "{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -62,6 +64,18 @@ Global
 		{ADCFC940-8E3E-40BB-A47A-A10CC311BC0D}.Release|Win32.Build.0 = Release|Win32
 		{ADCFC940-8E3E-40BB-A47A-A10CC311BC0D}.Release|x64.ActiveCfg = Release|Win32
 		{ADCFC940-8E3E-40BB-A47A-A10CC311BC0D}.Release|x64.Build.0 = Release|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Debug|Win32.Build.0 = Debug|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Debug|x64.ActiveCfg = Debug|x64
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Debug|x64.Build.0 = Debug|x64
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Release|Win32.ActiveCfg = Release|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Release|Win32.Build.0 = Release|Win32
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Release|x64.ActiveCfg = Release|x64
+		{DE8D39BD-242E-4AD0-BA53-60E6ADB3AA31}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

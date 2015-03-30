@@ -14,6 +14,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ShaderReflector", "..\Tools
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{B180FF61-F857-4F20-ABD3-D9493C72732C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Example2", "Example2\Projects\Win\VS2010\Example2.vcxproj", "{9736652F-B346-4734-9044-3510B6997479}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -46,6 +48,14 @@ Global
 		{ADCFC940-8E3E-40BB-A47A-A10CC311BC0D}.Release|Win32.Build.0 = Release|Win32
 		{ADCFC940-8E3E-40BB-A47A-A10CC311BC0D}.Release|x64.ActiveCfg = Release|Win32
 		{ADCFC940-8E3E-40BB-A47A-A10CC311BC0D}.Release|x64.Build.0 = Release|Win32
+		{9736652F-B346-4734-9044-3510B6997479}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9736652F-B346-4734-9044-3510B6997479}.Debug|Win32.Build.0 = Debug|Win32
+		{9736652F-B346-4734-9044-3510B6997479}.Debug|x64.ActiveCfg = Debug|x64
+		{9736652F-B346-4734-9044-3510B6997479}.Debug|x64.Build.0 = Debug|x64
+		{9736652F-B346-4734-9044-3510B6997479}.Release|Win32.ActiveCfg = Release|Win32
+		{9736652F-B346-4734-9044-3510B6997479}.Release|Win32.Build.0 = Release|Win32
+		{9736652F-B346-4734-9044-3510B6997479}.Release|x64.ActiveCfg = Release|x64
+		{9736652F-B346-4734-9044-3510B6997479}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
