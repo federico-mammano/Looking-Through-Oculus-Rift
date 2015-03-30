@@ -116,7 +116,8 @@ a {
   border-bottom: 1px dashed #ccc;
   padding-bottom: 0.05em; }
 .main-content h2 {
-  font-size: 2em; }  
+  font-size: 2em;
+  color: #444; }  
 .main-content p {
   margin-bottom: 1em;
   text-align: justify; }
