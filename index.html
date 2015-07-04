@@ -1,37 +1,25 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction : Example and code about how to look through the Oculus Rift with webcams">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction</title>
+    <meta charset="UTF-8">
+    <title>Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction by federico-mammano</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
+    <section class="page-header">
+      <h1 class="project-name">Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction</h1>
+      <h2 class="project-tagline">DIY, examples and code about how to convert the Oculus Rift into VR/AR smart glasses - Federico Mammano</h2>
+      <a href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift" class="btn">View on GitHub</a>
+      <a href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift">View on GitHub</a>
-
-          <h1 id="project_title">Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction</h1>
-          <h2 id="project_tagline">Example and code about how to look through the Oculus Rift with webcams</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h2>
+    <section class="main-content">
+      <h2>
 <a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h2>
 
 <p><br>
@@ -81,7 +69,7 @@ I positioned the two webcams at the interpupillary distance (about 62-66 cm) and
 <br><br><br></p>
 
 <h2>
-<a id="example-1" class="anchor" href="#example-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example 1</h2>
+<a id="example-1-switching-from-real-world-to-virtual-reality" class="anchor" href="#example-1-switching-from-real-world-to-virtual-reality" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example 1. Switching from Real World to Virtual Reality.</h2>
 
 <p>This example has been based upon the original Oculus Room Tiny project provided with the Oculus SDK in order to give the opportunity to everyone to immediately play with the code in a very basic application and focus on things that matter. With the aim to facilitate the use I have also provided the project both with DirectX and OpenGL functionalities. Note that OpenGL works, but could present some issues.</p>
 
@@ -158,18 +146,69 @@ Note: Even if I have mounted two 120° ultra-wide webcams (therefore a bigger FO
 #define WEBCAM_1_VERT_ORIENTATION  true
 #define WEBCAM_1_HMD_FOV_RATIO     1.0f
 </code></pre>
-      </section>
-    </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction maintained by <a href="https://github.com/federico-mammano">federico-mammano</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+<p><strong><a href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift/zipball/master">Download the project here</a></strong>
+<br><br><br></p>
+
+<h2>
+<a id="example-2-hand-detection-and-gesture-control" class="anchor" href="#example-2-hand-detection-and-gesture-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example 2. Hand detection and gesture control.</h2>
+
+<p>This example is an evolution of <em>Example 1</em> (be sure you have read it) and will provide you a simple outline about how using Computer Vision to detect hand and fingers and being able to interact with the virtual or real world through gestures.</p>
+
+<p>As far as this prototype (cf. Image 1) is very basic and has only 1 or 2 webcams, hand detection and gesture interaction could be more challenging compared to devices with a Time-of-flight IR camera (depth sensor) like many smart glasses (e.g.: Meta, Atheer Labs, HoloLens, ...) or like human gesture interaction devices (e.g.: Kinect, Motion Leap, Creative 3D camera, ...).</p>
+
+<p>As soon as you compile and execute the application, your hand and fingers will be detected in your webcam frames, as shown in the Image 4. Now, if you swipe your hand up (cf. Image 5) you will switch your view from the Looking-through mode to the virtual world (cf. Image 6), and vice versa if you swipe your hand down. The hand gesture interaction does the same thing of pressing the key [X] in the Example 1.
+<br><br></p>
+
+<p><img src="images/GestureControl01.jpg" alt="Hand and fingers detection">
+<br>
+<strong>Image 4</strong>. <em>Hand and fingers detected in the webcam video frames.</em>
+<br><br></p>
+
+<p><img src="images/GestureInteraction.jpg" alt="Gesture interaction - Oculus VR">
+<br>
+<strong>Image 5</strong>. <em>Interacting with the application through gestures.</em>
+<br><br></p>
+
+<p><img src="images/GestureControl02.jpg" alt="Smart glasses in virtual world - Oculus VR">
+<br>
+<strong>Image 6</strong>. <em>Full virtual reality mode.</em>
+<br><br></p>
+
+<h3>
+<a id="setup-1" class="anchor" href="#setup-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setup</h3>
+
+<p>You will find the Visual Studio (2010, 2012 and 2013) global project in the folder <em>Samples</em> and the specific example files in the folder <em>Samples/Example2</em>.<br><br></p>
+
+<p><em><strong>Hand.h</strong></em><br></p>
+
+<hr>
+
+<p>The big challenge here is to identify our hand into the video frame isolating the skin by specifying the best color range. Since colors can dramatically change depending on the light conditions, you will need to set the range values that work for you until you will obtain the correct hand shape. To help you in achieving this task, I have also written a small piece of code (you can find it in the file <em>Samples/Example2/SkinMaskTool/SkinMaskTool.cpp</em>) that will enable you to find the best YCrCb thresholds (cf. Image 7). According to me, YCrCb seems to be one of the best color space to work with, nevertheless try to write your own skin detection function. <em>SkinMaskTool</em> is also provided with a <em>Visual Studio 2010 Win32-Debug</em> project for simplicity.<br><br></p>
+
+<p><img src="images/SkinMask.jpg" alt="Skin detection - Computer Vision - Oculus VR">
+<br>
+<strong>Image 7</strong>. <em>Identifying the YCrCb range that isolate the skin color.</em>
+<br><br></p>
+
+<p>Set the minimum and maximum YCrCb values that you obtain from the SkinMaskTool (cf. Image 7):</p>
+
+<pre><code>cv::Scalar MinYCrCb = cv::Scalar(100, 160, 70); 
+cv::Scalar MaxYCrCb = cv::Scalar(255, 190, 100);
+</code></pre>
+
+<p><strong><a href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift/zipball/master">Download the project here</a></strong>
+<br><br><br></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/federico-mammano/Looking-Through-Oculus-Rift">Looking Through the Oculus Rift - Augmented Reality, Virtual Reality and Gesture Interaction</a> is maintained by <a href="https://github.com/federico-mammano">federico-mammano</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
-    </div>
 
-              <script type="text/javascript">
+    </section>
+
+            <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
@@ -180,6 +219,6 @@ Note: Even if I have mounted two 120° ultra-wide webcams (therefore a bigger FO
             } catch(err) {}
           </script>
 
-
   </body>
 </html>
+
