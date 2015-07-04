@@ -1,0 +1,4 @@
+[submodule "Looking-Through-Oculus-Rift"]
+	path = Looking-Through-Oculus-Rift
+	url = https://github.com/federico-mammano/Looking-Through-Oculus-Rift.git
+	branch = gh-pages
